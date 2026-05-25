@@ -1,0 +1,47 @@
+{
+  "name": "machinemode",
+  "version": "0.1.0",
+  "description": "An AOI mode for ls, find, grep, and the other coreutils-class tools agents touch constantly.",
+  "type": "module",
+  "bin": {
+    "machinemode": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "prepublishOnly": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3"
+  },
+  "license": "MIT",
+  "author": "Kevin Hunt <kevinhunt@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agentoperable/machinemode.git"
+  },
+  "homepage": "https://machinemode.io/direction#07",
+  "bugs": {
+    "url": "https://github.com/agentoperable/machinemode/issues"
+  },
+  "keywords": [
+    "aoi",
+    "agent-operable",
+    "machine-mode",
+    "cli",
+    "wrapper",
+    "coreutils",
+    "jsonl"
+  ]
+}
